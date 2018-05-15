@@ -2,6 +2,14 @@ html
     head
         title Profile
         link(rel="stylesheet", href="/css/style.css")
-    body.test
+    body
         main
-            h1 Bienvenu sur votre profile : #{user.name}
+            h1 Bienvenu sur votre profile : #{user.login}
+            p Url : #{user.url}
+            p Website : #{user.blog}
+            p Name : #{user.name}
+            p Localisation : #{user.location}
+            if user.email === null
+                p Vous avez pas d'email enregister
+            else
+                p Email : #{user.email}
