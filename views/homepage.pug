@@ -1,0 +1,12 @@
+html
+    head
+        title Welcome on my awesome website!
+        link(rel="stylesheet", href="/css/style.css")
+    body
+        main
+            h1 Feel free to signup here:
+
+            form(method='GET' action='/profile/?:username')
+                label(for='username') Name:
+                input#username.form-control(type='text', placeholder='Username' name='username')
+                button.btn(type='submit')
